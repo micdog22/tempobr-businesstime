@@ -1,0 +1,18 @@
+
+### Feriados 2025
+GET http://localhost:5199/api/holidays/2025
+
+### Próximo dia útil
+GET http://localhost:5199/api/business-day/next?date=2025-04-21
+
+### Somar dias úteis
+GET http://localhost:5199/api/business-day/add?start=2025-09-19&days=5
+
+### Somar horas úteis
+POST http://localhost:5199/api/business-hour/add
+Content-Type: application/json
+
+{ "start": "2025-09-19T16:30:00", "hours": 4.5, "workStartHour": 9, "workEndHour": 18 }
+
+### ICS de feriados
+GET http://localhost:5199/api/ics/holidays/2025
